@@ -21,7 +21,7 @@ function Navbar() {
         { withCredentials: true }
       );
       console.log(data);
-      localStorage.removeItem("jwt"); // deleting token in localStorage so that if user logged out it will goes to login page
+      localStorage.removeItem("jwt");
       toast.success(data.message);
       setIsAuthenticated(false);
       navigateTo("/login");
@@ -38,7 +38,6 @@ function Navbar() {
           <div className="font-semibold text-xl">
             Chilly🔥<span className="text-blue-500">Blog</span>
           </div>
-          {/* Desktop */}
           <div className=" mx-6">
             <ul className="hidden md:flex space-x-6">
               <Link to="/" className="hover:text-blue-500">
@@ -92,7 +91,6 @@ function Navbar() {
             )}
           </div>
         </div>
-        {/* mobile navbar */}
         {show && (
           <div className="bg-white">
             <ul className="flex flex-col h-screen items-center justify-center space-y-3 md:hidden text-xl">

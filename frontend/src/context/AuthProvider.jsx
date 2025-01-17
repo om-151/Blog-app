@@ -11,8 +11,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        // token should be let type variable because its value will change in every login. (in backend also)
-        let token = localStorage.getItem("jwt"); // Retrieve the token directly from the localStorage (Go to login.jsx)
+        let token = localStorage.getItem("jwt");
         console.log(token);
         if (token) {
           const { data } = await axios.get(

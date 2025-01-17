@@ -14,7 +14,6 @@ dotenv.config();
 const port = process.env.PORT;
 const MONOGO_URL = process.env.MONOG_URI;
 
-//middleware
 app.use(express.json());
 app.use(cookieParser());
 app.use(
@@ -32,7 +31,6 @@ app.use(
   })
 );
 
-// DB Code
 try {
   mongoose.connect(MONOGO_URL);
   console.log("Conntected to MonogDB");
@@ -40,10 +38,8 @@ try {
   console.log(error);
 }
 
-// defining routes
 app.use("/api/users", userRoute);
 app.use("/api/blogs", blogRoute);
-// Cloudinary
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.CLOUD_API_KEY,

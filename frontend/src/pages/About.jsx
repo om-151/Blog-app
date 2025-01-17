@@ -60,7 +60,7 @@ function About() {
         holds immense admiration for <strong> King Kohli.</strong> His favorite
         person and biggest inspiration is his twin brother,{" "}
         <strong>Ankush.</strong> Their friendly rivalry and deep bond have
-        significantly shaped Akhil’s journey. Ankush is not only a great
+        significantly shaped Akhil's journey. Ankush is not only a great
         competitor but also a steadfast friend, constantly motivating Akhil to
         strive for excellence.
       </p>

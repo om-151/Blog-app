@@ -1,7 +1,6 @@
 import { User } from "../models/user.model.js";
 import jwt from "jsonwebtoken";
 
-//Authentication
 export const isAuthenticated = async (req, res, next) => {
   try {
     const token = req.cookies.jwt;
@@ -22,7 +21,6 @@ export const isAuthenticated = async (req, res, next) => {
   }
 };
 
-//Authorization
 export const isAdmin = (...roles) => {
   return (req, res, next) => {
     if (!roles.includes(req.user.role)) {
