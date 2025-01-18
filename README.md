@@ -7,6 +7,6 @@
 
 ## Step : 4 = cd backend
 ### Step : 5 = npm install
-#### Step : 6 = nodemon index.js
+#### Step : 6 = npm run dev
 
 # All Set !!!
