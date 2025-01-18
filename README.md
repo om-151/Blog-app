@@ -9,4 +9,13 @@
 ### Step : 5 = npm install
 #### Step : 6 = npm run dev
 
+# create .env file with this variable
+
+### PORT = server port number
+### MONOG_URI = database url
+### CLOUD_NAME = cloudinary name
+### CLOUD_API_KEY = cloudinary api key
+### CLOUD_SECRET_KEY = cloudinary secret key
+### JWT_SECRET_KEY = jwt secret key
+
 # All Set !!!
