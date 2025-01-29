@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
         console.log(token);
         if (token) {
           const { data } = await axios.get(
-            "http://localhost:5000/api/users/my-profile",
+            "https://blog-server-advb.onrender.com/api/users/my-profile",
             {
               withCredentials: true,
               headers: {
@@ -35,7 +35,7 @@ export const AuthProvider = ({ children }) => {
     const fetchBlogs = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/blogs/all-blogs",
+          "https://blog-server-advb.onrender.com/api/blogs/all-blogs",
           { withCredentials: true }
         );
         console.log(data);
