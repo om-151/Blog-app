@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ("http://localhost:5173", "https://blog-server-advb.onrender.com"),
+    origin: "https://blog-client-lkzs.onrender.com",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "HEAD", "PATCH"],
   })
