@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
@@ -9,84 +10,88 @@ const Footer = () => {
       <footer className="border py-10">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className=" text-center md:text-start">
-            <h2 className="text-lg font-semibold mb-4">Products</h2>
+            <h2 className="text-lg font-semibold mb-4">Our Products</h2>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Flutter
-                </a>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  My blogs
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  React
-                </a>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  Read blogs
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Android
-                </a>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  New 2025
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  iOS
-                </a>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  Trending topics
+                </Link>
               </li>
             </ul>
           </div>
           <div className=" text-center md:text-start">
-            <h2 className="text-lg font-semibold mb-4">Design to code</h2>
+            <h2 className="text-lg font-semibold mb-4">Topics</h2>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Figma plugin
-                </a>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  Travelling
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Templates
-                </a>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  Reading
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  Health
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  Wealth
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  Books
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className=" text-center md:text-start">
-            <h2 className="text-lg font-semibold mb-4">Comparison</h2>
+            <h2 className="text-lg font-semibold mb-4">Best blog</h2>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  DhiWise vs Anima
-                </a>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  DhiWise Anima
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  DhiWise vs Appsmith
-                </a>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  Myth Appsmith
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  DhiWise vs FlutterFlow
-                </a>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  Dare to dam
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  DhiWise vs Monday Hero
-                </a>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  Special blogs
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  DhiWise vs Retool
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  DhiWise vs Bubble
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  DhiWise vs Figma Dev Mode
-                </a>
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
+                  Dilwale
+                </Link>
               </li>
             </ul>
           </div>
@@ -94,29 +99,29 @@ const Footer = () => {
             <h2 className="text-lg font-semibold mb-4">Company</h2>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
                   Career
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <Link to="/" className="text-gray-400 hover:text-gray-600">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -124,22 +129,21 @@ const Footer = () => {
       </footer>
       <div className=" container mx-auto  flex flex-col md:flex-row justify-between items-center">
         <div className="text-xl font-semibold hidden md:flex">
-        Chilly🔥<span className="text-blue-500 font-bold">Blog</span>
+          <p className="font-semibold m-3">Blogger</p>
         </div>
         <div className="text-gray-400 text-sm hidden md:flex">
-          <p>&copy; 2025 Chilly🔥Blog PVT. LTD. All rights reserved</p>
+          <p>&copy; 2025 Blogger PVT. LTD. All rights reserved</p>
         </div>
         <div className="mt-4 md:mt-0 flex space-x-5">
-          <a href="#">
+          <Link to="https://github.com/" target="_blank">
             <FaGithub className="h-6" />
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="https://www.youtube.com/" target="_blank">
             <BsYoutube className="h-6" />
-          </a>
-
-          <a href="#">
+          </Link>
+          <Link to="https://www.linkedin.com/" target="_blank">
             <FaLinkedin className="h-6" />
-          </a>
+          </Link>
         </div>
       </div>
     </>

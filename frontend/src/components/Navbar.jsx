@@ -36,7 +36,9 @@ function Navbar() {
       <nav className=" shadow-lg px-4 py-2">
         <div className="flex items-center justify-between container mx-auto">
           <div className="font-semibold text-xl">
-            Chilly🔥<span className="text-blue-500">Blog</span>
+            <Link to="/">
+              <p className="font-semibold">Blogger</p>
+            </Link>
           </div>
           <div className=" mx-6">
             <ul className="hidden md:flex space-x-6">
