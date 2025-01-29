@@ -21,81 +21,37 @@ function CreateBlog() {
     };
   };
 
-  // const handleCreateBlog = async (e) => {
-  //   e.preventDefault();
-  //   const formData = new FormData();
-  //   formData.append("title", title);
-  //   formData.append("category", category);
-  //   formData.append("about", about);
-
-  //   formData.append("blogImage", blogImage);
-  //   try {
-  //     const { data } = await axios.post(
-  //       "https://blog-server-advb.onrender.com/api/blogs/create",
-  //       formData,
-  //       {
-  //         withCredentials: true,
-  //         headers: {
-  //           "Content-Type": "multipart/form-data",
-  //         },
-  //       }
-  //     );
-  //     console.log(data);
-  //     toast.success(data.message || "User registered successfully");
-  //     setTitle("");
-  //     setCategory("");
-  //     setAbout("");
-  //     setBlogImage("");
-  //     setBlogImagePreview("");
-  //   } catch (error) {
-  //     console.log(error);
-  //     toast.error(error.message || "Please fill the required fields");
-  //   }
-  // };
-
   const handleCreateBlog = async (e) => {
     e.preventDefault();
-
-    // Retrieve the authentication token (assuming it's stored in localStorage)
-    const token = localStorage.getItem("token");
-    if (!token) {
-      toast.error("Authentication required. Please log in.");
-      return;
-    }
-
     const formData = new FormData();
     formData.append("title", title);
     formData.append("category", category);
     formData.append("about", about);
-    formData.append("blogImage", blogImage);
 
+    formData.append("blogImage", blogImage);
     try {
       const { data } = await axios.post(
-        "https://blog-server-advb.onrender.com/api/blogs/create",
+        "http://localhost:5000/api/blogs/create",
         formData,
         {
           withCredentials: true,
           headers: {
             "Content-Type": "multipart/form-data",
-            Authorization: `Bearer ${token}`, // Attach token
           },
         }
       );
-
       console.log(data);
-      toast.success(data.message || "Blog created successfully");
+      toast.success(data.message || "User registered successfully");
       setTitle("");
       setCategory("");
       setAbout("");
       setBlogImage("");
       setBlogImagePreview("");
-
     } catch (error) {
-      console.error("Error:", error);
-      toast.error(error.response?.data?.message || "Error creating blog");
+      console.log(error);
+      toast.error(error.message || "Please fill the required fields");
     }
   };
-
   return (
     <div>
       <div className="min-h-screen  py-10">

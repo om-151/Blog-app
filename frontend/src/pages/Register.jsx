@@ -41,7 +41,7 @@ function Register() {
     formData.append("photo", photo);
     try {
       const { data } = await axios.post(
-        "https://blog-server-advb.onrender.com/api/users/register",
+        "http://localhost:5000/api/users/register",
         formData,
         {
           withCredentials: true,
@@ -78,7 +78,7 @@ function Register() {
         <div className="w-full max-w-md bg-white shadow-md rounded-lg p-8">
           <form onSubmit={handleRegister}>
             <div className="font-semibold text-xl items-center text-center">
-              <p className="font-semibold text-3xl">Blogger</p>
+              Cilli<span className="text-blue-500">Blog</span>
             </div>
             <h1 className="text-xl font-semibold mb-6">Register</h1>
             <select

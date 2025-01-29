@@ -17,7 +17,7 @@ function Login() {
 
     try {
       const { data } = await axios.post(
-        "https://blog-server-advb.onrender.com/api/users/login",
+        "http://localhost:5000/api/users/login",
         { email, password, role },
         {
           withCredentials: true,
@@ -54,7 +54,7 @@ function Login() {
         <div className="w-full max-w-md bg-white shadow-md rounded-lg p-8">
           <form onSubmit={handleLogin}>
             <div className="font-semibold text-xl items-center text-center">
-              <p className="font-semibold text-3xl">Blogger</p>
+              Cilli<span className="text-blue-500">Blog</span>
             </div>
             <h1 className="text-xl font-semibold mb-6">Login</h1>
             <select

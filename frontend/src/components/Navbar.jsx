@@ -17,7 +17,7 @@ function Navbar() {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        "https://blog-server-advb.onrender.com/api/users/logout",
+        "http://localhost:5000/api/users/logout",
         { withCredentials: true }
       );
       console.log(data);
@@ -36,9 +36,7 @@ function Navbar() {
       <nav className=" shadow-lg px-4 py-2">
         <div className="flex items-center justify-between container mx-auto">
           <div className="font-semibold text-xl">
-            <Link to="/">
-              <p className="font-semibold">Blogger</p>
-            </Link>
+            Chilly🔥<span className="text-blue-500">Blog</span>
           </div>
           <div className=" mx-6">
             <ul className="hidden md:flex space-x-6">
